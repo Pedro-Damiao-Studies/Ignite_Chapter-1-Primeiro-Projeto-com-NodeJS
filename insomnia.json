@@ -1,0 +1,100 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2022-05-28T21:41:54.587Z",
+  "__export_source": "insomnia.desktop.app:v2022.3.0",
+  "resources": [
+    {
+      "_id": "req_a0867695dd8f4200a407de5dd9832fa7",
+      "parentId": "fld_6eb78198619b404980aac342d24a2928",
+      "modified": 1653774016947,
+      "created": 1653773397883,
+      "url": "{{ _.base_url }}/accounts",
+      "name": "Create",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"cpf\": \"11111111111\",\n\t\"name\": \"Pedro Henrique Damião\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_e5c737d4a3984d849ed47bd6c21ab867"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1653773397883,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_6eb78198619b404980aac342d24a2928",
+      "parentId": "wrk_a7fac1cc7af8434693fc6f1be608133d",
+      "modified": 1653773418042,
+      "created": 1653773418042,
+      "name": "Accounts",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1653773418042,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_a7fac1cc7af8434693fc6f1be608133d",
+      "parentId": null,
+      "modified": 1653773362214,
+      "created": 1653773362214,
+      "name": "Ignite_Chapter 1 Primeito Projeto com NodeJS",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "env_b5abbdf5321275ecef7d5d1867eb0bf0f2e54eb6",
+      "parentId": "wrk_a7fac1cc7af8434693fc6f1be608133d",
+      "modified": 1653773387397,
+      "created": 1653773362221,
+      "name": "Base Environment",
+      "data": {
+        "base_url": "http://localhost:3333"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "base_url"
+        ]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1653773362221,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_b5abbdf5321275ecef7d5d1867eb0bf0f2e54eb6",
+      "parentId": "wrk_a7fac1cc7af8434693fc6f1be608133d",
+      "modified": 1653773362222,
+      "created": 1653773362222,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_214dec9978bc4347aacb9659fbeb78f2",
+      "parentId": "wrk_a7fac1cc7af8434693fc6f1be608133d",
+      "modified": 1653773362216,
+      "created": 1653773362216,
+      "fileName": "Ignite_Chapter 1 Primeito Projeto com NodeJS",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}
