@@ -9,6 +9,13 @@ const customers = [];
 
 app.post('/accounts', (request, response) => {
   const { cpf, name } = request.body;
+
+  const customerAlreadyExists = customers.some((customer) => customer.cpf === cpf);
+
+  if (customerAlreadyExists) {
+    return response.status(400).json({ error: 'Customer already exists!' })
+  }
+
   const id = crypto.randomUUID();
 
   customers.push({

@@ -24,7 +24,7 @@
 
 ### Regras de negócio
 
-- [ ] Não deve ser possível cadastrar uma conta com CPF já existente
+- [X] Não deve ser possível cadastrar uma conta com CPF já existente
 
 - [ ] Não deve ser possível fazer depósito em uma conta não existente
 
