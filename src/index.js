@@ -26,6 +26,14 @@ app.post('/accounts', (request, response) => {
   });
 
   response.status(201).send();
-})
+});
+
+app.get('/statements/:cpf', (request, response) => {
+  const { cpf } = request.params;
+
+  const customer = customers.find((customer) => customer.cpf === cpf);
+
+  return response.json(customer.statement);
+});
 
 app.listen(3333);

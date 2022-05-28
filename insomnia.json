@@ -1,13 +1,58 @@
 {
   "_type": "export",
   "__export_format": 4,
-  "__export_date": "2022-05-28T21:41:54.587Z",
+  "__export_date": "2022-05-28T21:55:30.788Z",
   "__export_source": "insomnia.desktop.app:v2022.3.0",
   "resources": [
     {
+      "_id": "req_7b2ed71fe40e4b65b51f640a61bf5281",
+      "parentId": "fld_b4806fb76a9f4dc1aea448d47ef3b5e4",
+      "modified": 1653774865407,
+      "created": 1653774777689,
+      "url": "{{ _.base_url }}/statements/11111111111",
+      "name": "Search",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1653774777689,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_b4806fb76a9f4dc1aea448d47ef3b5e4",
+      "parentId": "wrk_a7fac1cc7af8434693fc6f1be608133d",
+      "modified": 1653774766195,
+      "created": 1653774766195,
+      "name": "Statements",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1653774766195,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_a7fac1cc7af8434693fc6f1be608133d",
+      "parentId": null,
+      "modified": 1653773362214,
+      "created": 1653773362214,
+      "name": "Ignite_Chapter 1 Primeito Projeto com NodeJS",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
       "_id": "req_a0867695dd8f4200a407de5dd9832fa7",
       "parentId": "fld_6eb78198619b404980aac342d24a2928",
-      "modified": 1653774016947,
+      "modified": 1653774853372,
       "created": 1653773397883,
       "url": "{{ _.base_url }}/accounts",
       "name": "Create",
@@ -47,16 +92,6 @@
       "environmentPropertyOrder": null,
       "metaSortKey": -1653773418042,
       "_type": "request_group"
-    },
-    {
-      "_id": "wrk_a7fac1cc7af8434693fc6f1be608133d",
-      "parentId": null,
-      "modified": 1653773362214,
-      "created": 1653773362214,
-      "name": "Ignite_Chapter 1 Primeito Projeto com NodeJS",
-      "description": "",
-      "scope": "collection",
-      "_type": "workspace"
     },
     {
       "_id": "env_b5abbdf5321275ecef7d5d1867eb0bf0f2e54eb6",
