@@ -1,9 +1,61 @@
 {
   "_type": "export",
   "__export_format": 4,
-  "__export_date": "2022-05-29T20:09:43.878Z",
+  "__export_date": "2022-05-29T20:16:40.636Z",
   "__export_source": "insomnia.desktop.app:v2022.3.0",
   "resources": [
+    {
+      "_id": "req_af838ba331354218bbce7d6b811dd21c",
+      "parentId": "fld_accefcbe82094707950cfcba4ba1488e",
+      "modified": 1653855375841,
+      "created": 1653855329707,
+      "url": "{{ _.base_url }}/balance",
+      "name": "Balance",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "id": "pair_d7ec0fe9232b412685ebd4c5a5f328d1",
+          "name": "cpf",
+          "value": "11111111111",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1653855329707,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_accefcbe82094707950cfcba4ba1488e",
+      "parentId": "wrk_a7fac1cc7af8434693fc6f1be608133d",
+      "modified": 1653855339059,
+      "created": 1653855324137,
+      "name": "Balances",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1653855324137,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_a7fac1cc7af8434693fc6f1be608133d",
+      "parentId": null,
+      "modified": 1653773362214,
+      "created": 1653773362214,
+      "name": "Ignite_Chapter 1 Primeito Projeto com NodeJS",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
     {
       "_id": "req_51287f7705a045a7b96698b5d9b93b55",
       "parentId": "fld_dbe74158a02744bbab40b6fe224387d8",
@@ -55,19 +107,9 @@
       "_type": "request_group"
     },
     {
-      "_id": "wrk_a7fac1cc7af8434693fc6f1be608133d",
-      "parentId": null,
-      "modified": 1653773362214,
-      "created": 1653773362214,
-      "name": "Ignite_Chapter 1 Primeito Projeto com NodeJS",
-      "description": "",
-      "scope": "collection",
-      "_type": "workspace"
-    },
-    {
       "_id": "req_b783811c74214938903c8614c6fdb35c",
       "parentId": "fld_eb7916c42bac453292d73ecac15eff64",
-      "modified": 1653853879145,
+      "modified": 1653855378890,
       "created": 1653838044333,
       "url": "{{ _.base_url }}/deposits",
       "name": "Deposit",
@@ -194,6 +236,48 @@
       "_type": "request"
     },
     {
+      "_id": "req_443341ebc37d42f685b6c1f7b37758ee",
+      "parentId": "fld_6eb78198619b404980aac342d24a2928",
+      "modified": 1653855179430,
+      "created": 1653855161752,
+      "url": "{{ _.base_url }}/accounts",
+      "name": "Delete",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "id": "pair_1a71099ca9f04248a7bf5a284429fd32",
+          "name": "cpf",
+          "value": "11111111111",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1653855161752,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_6eb78198619b404980aac342d24a2928",
+      "parentId": "wrk_a7fac1cc7af8434693fc6f1be608133d",
+      "modified": 1653773418042,
+      "created": 1653773418042,
+      "name": "Accounts",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1653773418042,
+      "_type": "request_group"
+    },
+    {
       "_id": "req_754809b96e33469cb66b7bb3ba3664b7",
       "parentId": "fld_6eb78198619b404980aac342d24a2928",
       "modified": 1653854917342,
@@ -222,18 +306,6 @@
       "settingRebuildPath": true,
       "settingFollowRedirects": "global",
       "_type": "request"
-    },
-    {
-      "_id": "fld_6eb78198619b404980aac342d24a2928",
-      "parentId": "wrk_a7fac1cc7af8434693fc6f1be608133d",
-      "modified": 1653773418042,
-      "created": 1653773418042,
-      "name": "Accounts",
-      "description": "",
-      "environment": {},
-      "environmentPropertyOrder": null,
-      "metaSortKey": -1653773418042,
-      "_type": "request_group"
     },
     {
       "_id": "req_2a01bd7d8146486bb1d18b280472a114",
@@ -276,7 +348,7 @@
     {
       "_id": "req_a0867695dd8f4200a407de5dd9832fa7",
       "parentId": "fld_6eb78198619b404980aac342d24a2928",
-      "modified": 1653854929397,
+      "modified": 1653855369409,
       "created": 1653773397883,
       "url": "{{ _.base_url }}/accounts",
       "name": "Create",
