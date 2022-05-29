@@ -12,7 +12,7 @@
 
 - [X] Deve ser possível realizar um saque
 
-- [ ] Deve ser possível buscar o extrato bancário do cliente por data
+- [X] Deve ser possível buscar o extrato bancário do cliente por data
 
 - [ ] Deve ser possível atualizar dados da conta do cliente
 

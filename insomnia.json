@@ -1,13 +1,13 @@
 {
   "_type": "export",
   "__export_format": 4,
-  "__export_date": "2022-05-29T16:18:22.566Z",
+  "__export_date": "2022-05-29T19:51:58.078Z",
   "__export_source": "insomnia.desktop.app:v2022.3.0",
   "resources": [
     {
       "_id": "req_51287f7705a045a7b96698b5d9b93b55",
       "parentId": "fld_dbe74158a02744bbab40b6fe224387d8",
-      "modified": 1653840947143,
+      "modified": 1653853844557,
       "created": 1653840759588,
       "url": "{{ _.base_url }}/withdraw",
       "name": "Withdraw",
@@ -67,7 +67,7 @@
     {
       "_id": "req_b783811c74214938903c8614c6fdb35c",
       "parentId": "fld_eb7916c42bac453292d73ecac15eff64",
-      "modified": 1653840943961,
+      "modified": 1653853879145,
       "created": 1653838044333,
       "url": "{{ _.base_url }}/deposits",
       "name": "Deposit",
@@ -115,6 +115,55 @@
       "_type": "request_group"
     },
     {
+      "_id": "req_30358ef9be2042b28292462dfebd899d",
+      "parentId": "fld_b4806fb76a9f4dc1aea448d47ef3b5e4",
+      "modified": 1653853773431,
+      "created": 1653853282807,
+      "url": "{{ _.base_url }}/statements/date",
+      "name": "Search by date",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [
+        {
+          "id": "pair_6bf04ff2cff94478875143932e7f9083",
+          "name": "date",
+          "value": "2022-05-29",
+          "description": ""
+        }
+      ],
+      "headers": [
+        {
+          "id": "pair_2c37ece17a9442bf922f8c15b4e4ba04",
+          "name": "cpf",
+          "value": "11111111111",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1653853282807,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_b4806fb76a9f4dc1aea448d47ef3b5e4",
+      "parentId": "wrk_a7fac1cc7af8434693fc6f1be608133d",
+      "modified": 1653774766195,
+      "created": 1653774766195,
+      "name": "Statements",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1653774766195,
+      "_type": "request_group"
+    },
+    {
       "_id": "req_7b2ed71fe40e4b65b51f640a61bf5281",
       "parentId": "fld_b4806fb76a9f4dc1aea448d47ef3b5e4",
       "modified": 1653775407721,
@@ -145,21 +194,9 @@
       "_type": "request"
     },
     {
-      "_id": "fld_b4806fb76a9f4dc1aea448d47ef3b5e4",
-      "parentId": "wrk_a7fac1cc7af8434693fc6f1be608133d",
-      "modified": 1653774766195,
-      "created": 1653774766195,
-      "name": "Statements",
-      "description": "",
-      "environment": {},
-      "environmentPropertyOrder": null,
-      "metaSortKey": -1653774766195,
-      "_type": "request_group"
-    },
-    {
       "_id": "req_a0867695dd8f4200a407de5dd9832fa7",
       "parentId": "fld_6eb78198619b404980aac342d24a2928",
-      "modified": 1653840934196,
+      "modified": 1653853877571,
       "created": 1653773397883,
       "url": "{{ _.base_url }}/accounts",
       "name": "Create",

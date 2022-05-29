@@ -71,7 +71,21 @@ app.post('/deposits', verifyIfAccountExistsByCPF, (request, response) => {
   customer.statement.push(statementOperation);
 
   return response.status(201).send();
+});
 
+app.get('/statements/date', verifyIfAccountExistsByCPF, (request, response) => {
+  const { customer } = request;
+  const { date } = request.query;
+
+  const dateFormat = new Date(date + ' 00:00');
+  console.log(dateFormat);
+  console.log(dateFormat.toDateString());
+
+  const statements = customer.statement.filter((statement) => {
+    return statement.createdAt.toDateString() === dateFormat.toDateString();
+  });
+
+  return response.json(statements);
 });
 
 app.post('/withdraw', verifyIfAccountExistsByCPF, (request, response) => {
@@ -81,7 +95,7 @@ app.post('/withdraw', verifyIfAccountExistsByCPF, (request, response) => {
   const balance = getBalance(customer.statement);
 
   if (balance < amount) {
-    return response.status(400).json ({error: 'Insufficient funds!'})
+    return response.status(400).json({ error: 'Insufficient funds!' })
   }
 
   const statementOperation = {
