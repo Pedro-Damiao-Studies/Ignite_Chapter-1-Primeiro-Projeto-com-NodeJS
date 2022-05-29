@@ -1,5 +1,5 @@
 const express = require('express');
-const crypto = require('crypto')
+const crypto = require('crypto');
 
 const app = express();
 
@@ -108,6 +108,21 @@ app.post('/withdraw', verifyIfAccountExistsByCPF, (request, response) => {
   customer.statement.push(statementOperation);
 
   return response.status(201).send();
+});
+
+app.put('/accounts', verifyIfAccountExistsByCPF, (request, response) => {
+  const { name } = request.body;
+  const { customer } = request;
+
+  customer.name = name;
+
+  return response.status(201).send();
+});
+
+app.get('/accounts', verifyIfAccountExistsByCPF, (request, response) => {
+  const { customer } = request;
+
+  return response.json(customer);
 });
 
 app.listen(3333);

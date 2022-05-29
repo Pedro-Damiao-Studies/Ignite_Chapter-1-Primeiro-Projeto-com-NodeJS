@@ -1,7 +1,7 @@
 {
   "_type": "export",
   "__export_format": 4,
-  "__export_date": "2022-05-29T19:51:58.078Z",
+  "__export_date": "2022-05-29T20:09:43.878Z",
   "__export_source": "insomnia.desktop.app:v2022.3.0",
   "resources": [
     {
@@ -194,9 +194,89 @@
       "_type": "request"
     },
     {
+      "_id": "req_754809b96e33469cb66b7bb3ba3664b7",
+      "parentId": "fld_6eb78198619b404980aac342d24a2928",
+      "modified": 1653854917342,
+      "created": 1653854901943,
+      "url": "{{ _.base_url }}/accounts",
+      "name": "Search",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "id": "pair_9cf49f9b822a4085aa5b19fd4f139525",
+          "name": "cpf",
+          "value": "11111111111",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1653854901943,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_6eb78198619b404980aac342d24a2928",
+      "parentId": "wrk_a7fac1cc7af8434693fc6f1be608133d",
+      "modified": 1653773418042,
+      "created": 1653773418042,
+      "name": "Accounts",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1653773418042,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_2a01bd7d8146486bb1d18b280472a114",
+      "parentId": "fld_6eb78198619b404980aac342d24a2928",
+      "modified": 1653854933827,
+      "created": 1653854776336,
+      "url": "{{ _.base_url }}/accounts",
+      "name": "Update",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Pedro Henrique\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_c2dca5b11d0c458f9129dc65c63b6695"
+        },
+        {
+          "id": "pair_9c9be178dcc54d5182a8d932510f4d55",
+          "name": "cpf",
+          "value": "11111111111",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1653854776336,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
       "_id": "req_a0867695dd8f4200a407de5dd9832fa7",
       "parentId": "fld_6eb78198619b404980aac342d24a2928",
-      "modified": 1653853877571,
+      "modified": 1653854929397,
       "created": 1653773397883,
       "url": "{{ _.base_url }}/accounts",
       "name": "Create",
@@ -224,18 +304,6 @@
       "settingRebuildPath": true,
       "settingFollowRedirects": "global",
       "_type": "request"
-    },
-    {
-      "_id": "fld_6eb78198619b404980aac342d24a2928",
-      "parentId": "wrk_a7fac1cc7af8434693fc6f1be608133d",
-      "modified": 1653773418042,
-      "created": 1653773418042,
-      "name": "Accounts",
-      "description": "",
-      "environment": {},
-      "environmentPropertyOrder": null,
-      "metaSortKey": -1653773418042,
-      "_type": "request_group"
     },
     {
       "_id": "env_b5abbdf5321275ecef7d5d1867eb0bf0f2e54eb6",
